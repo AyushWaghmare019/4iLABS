@@ -40,7 +40,7 @@ const Navbar = () => {
             <button onClick={() => handleNavClick('about')} className="nav-link text-white">About</button>
             <button onClick={() => handleNavClick('projects')} className="nav-link text-white">Projects</button>
             <button onClick={() => handleNavClick('members')} className="nav-link text-white">Members</button>
-            <button onClick={() => handleNavClick('sponsors')} className="nav-link text-white">Sponsors</button>
+            <button onClick={() => handleNavClick('Achievements')} className="nav-link text-white">Achievements</button>
           </div>
 
           {/* Mobile menu button */}
@@ -61,7 +61,7 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black/50 backdrop-blur-lg">
             <button onClick={() => handleNavClick('about')} className="block w-full text-left text-gray-300 hover:text-white px-3 py-2">About</button>
             <button onClick={() => handleNavClick('projects')} className="block w-full text-left text-gray-300 hover:text-white px-3 py-2">Projects</button>
-            <button onClick={() => handleNavClick('sponsors')} className="block w-full text-left text-gray-300 hover:text-white px-3 py-2">Sponsors</button>
+            <button onClick={() => handleNavClick('Achievements')} className="block w-full text-left text-gray-300 hover:text-white px-3 py-2"></button>
             <button onClick={() => handleNavClick('members')} className="block w-full text-left text-gray-300 hover:text-white px-3 py-2">Members</button>
           </div>
         </div>
