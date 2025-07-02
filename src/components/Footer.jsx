@@ -21,15 +21,12 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-gray-400 text-sm">
                 <Mail className="w-4 h-4" />
-                <span>contact@4ilabs.com</span>
+                <span>4ilab@iitg.ac.in</span>
               </div>
-              <div className="flex items-center space-x-2 text-gray-400 text-sm">
-                <Phone className="w-4 h-4" />
-                <span>+1 (555) 123-4567</span>
-              </div>
+          
               <div className="flex items-center space-x-2 text-gray-400 text-sm">
                 <MapPin className="w-4 h-4" />
-                <span>Innovation District, Tech City</span>
+                <span>Guwahati, Assam</span>
               </div>
             </div>
           </div>
@@ -55,7 +52,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
-          <p>&copy; 2024 4i Labs. All rights reserved.</p>
+          <p>&copy; 2025 4i Labs. All rights reserved.</p>
         </div>
       </div>
     </footer>
