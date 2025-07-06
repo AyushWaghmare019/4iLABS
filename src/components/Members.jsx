@@ -30,8 +30,8 @@ const Members = () => {
     { img: member10, name: "Ajay Kartik", position: "Electronics & Control", department: "ANTHAHSAGIRI" },
     { img: member11, name: "Snehitha", position: "ML Core Team", department: "ANTHAHSAGIRI" },
     { img: member12, name: "Mir Maiti", position: "Project Lead", department: "INDRONE" },
-    { img: member13, name: "Sagnik Debnath", position: "Multi Modal Project Lead", department: "INDRONE" },
-    { img: member14, name: "Venkat Sai Teja", position: "Quantum Head", department: "INDRONE" },
+    { img: member13, name: "Sagnik Debnath", position: "Multi Modal Project Lead"},
+    { img: member14, name: "Venkat Sai Teja", position: "Quantum Head"},
   ];
 
   return (
