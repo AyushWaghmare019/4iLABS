@@ -1,8 +1,11 @@
 import React from 'react';
 import { ArrowLeft, Calendar, Users, Target } from 'lucide-react';
 import { Link } from 'react-router-dom';
+<h1 className="text-5xl font-bold text-red-500 mb-6">
+  Multimodal AI Poster Generator TEST UPDATE
+</h1>
 
-const Project4 = () => {
+const Project5 = () => {
   return (
     <div className="min-h-screen py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,8 +18,8 @@ const Project4 = () => {
         </Link>
 
         <div className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-red-500 mb-6">
-            Multimodal AI Poster Generator TEST UPDATE
+          <h1 className="text-5xl font-bold text-white mb-6">
+            Multimodal AI Poster Generator
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
             Empowering local businesses to create indigenous language posters using cutting-edge multimodal AI technology.
@@ -70,4 +73,4 @@ const Project4 = () => {
   );
 };
 
-export default Project4;
+export default Project5;

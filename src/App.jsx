@@ -7,6 +7,7 @@ import Project1 from './pages/Project1.jsx';
 import Project2 from './pages/Project2.jsx';
 import Project3 from './pages/Project3.jsx';
 import Project4 from './pages/Project4.jsx';
+import Project5 from './pages/Project5.jsx';
 import './styles.css';
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
           <div className="floating-orb orb-4"></div>
           <div className="floating-orb orb-5"></div>
         </div>
-        
+
         <div className="relative z-10">
           <Navbar />
           <main>
@@ -32,6 +33,7 @@ function App() {
               <Route path="/project2" element={<Project2 />} />
               <Route path="/project3" element={<Project3 />} />
               <Route path="/project4" element={<Project4 />} />
+               <Route path="/project5" element={<Project5 />} />
             </Routes>
           </main>
           <Footer />

@@ -1,33 +1,48 @@
 import React from 'react';
 import Members from '../components/Members.jsx';
-import Achievements from '../components/Achievements.jsx'; // ✅ corrected import
+import Achievements from '../components/Achievements.jsx';
 
 import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
 import img4 from "../assets/img4.png";
+import img5 from "../assets/img5.png";
 
 const Home = () => {
   const projects = [
     {
       title: "Antahsagari",
-      description: "Underwater ROV for exploring and navigation: An underwater rov that aims to explore and navigate the underwater world of mighty Brahmaputra River. A ROV that is capable of collecting data which can be used for various research purposes and developments",
+      description: "Underwater ROV for exploring and navigation: An underwater rov that aims to explore and navigate the underwater world of mighty Brahmaputra River. A ROV that is capable of collecting data which can be used for various research purposes and developments.",
       image: img1,
+      bgGradient: "from-blue-600/10 to-blue-900/10",
     },
     {
       title: "InNdrone",
       description: "An autonomous drone which can inspect indoor areas and move without the help of GPS. The drone is able to map entire area while constantly sensing for obstacles and planning its path to move safely and efficiently. It finds its application in hazardous situations like fire accidents, earthquakes etc. where human reach is not possible.",
       image: img2,
+      bgGradient: "from-purple-600/10 to-purple-900/10",
     },
     {
       title: "Mitra",
-      description: "Multi-Terrain Agricultural Bot: carrying out the legacy of a ARLE, we present before you MITRA. An autonomous robot capable of navigation using computer vision, localization, 3D mapping and Sensor Data Management similar to ARLE to navigate around the field. It is capable to identify weeds and deployed with a mechanism to remove them. Also, it aims to help farmers in the irrigation of crops and guards the crop against pests.",
+      description: "Multi-Terrain Agricultural Bot: carrying out the legacy of ARLE, we present before you MITRA. An autonomous robot capable of navigation using computer vision, localization, 3D mapping and Sensor Data Management similar to ARLE to navigate around the field. It is capable to identify weeds and deployed with a mechanism to remove them. Also, it aims to help farmers in the irrigation of crops and guards the crop against pests.",
       image: img3,
+      bgGradient: "from-green-600/10 to-green-900/10",
     },
     {
-      title: "RAMAN",
-      description: "A humanoid designed to explore and research in the field of robotics and facilitate robots interaction and cooperation with humans",
+      title: "Multi Modal",
+      description: `Multimodal AI is a cutting-edge field where the latest research is happening. 4i Labs is using Multimodal AI to help local businesses create their own posters using reference images and indigenous languages, replacing the need for designers.
+
+Our solution aims to eliminate the branding problems faced by local small to medium scale businesses. We provide our indigenous text-to-image model which takes input images and prompts in local languages to generate the required poster, performing its own modifications.
+
+Our team is extensively working to scrape well-captioned images, train an indigenous LLM from scratch, and fine-tune state-of-the-art text-to-image models.`,
       image: img4,
+      bgGradient: "from-yellow-600/10 to-yellow-900/10",
+    },
+    {
+      title: "Quantum Machine Learning",
+      description: "This is a newly established research domain at 4i Labs, focused on exploring the potential of quantum computing in solving complex problems. The initiative applies quantum algorithms across various areas, including industry-grade synthetic data generation using Quantum GANs (QGANs), quantum optimization, and applications in cryptography. The domain is committed to advancing Quantum Machine Learning through collaborative research, practical implementations, and the exploration of near-term quantum advantage.",
+      image: img5,
+      bgGradient: "from-red-600/10 to-red-900/10",
     },
   ];
 
@@ -64,21 +79,21 @@ const Home = () => {
                 key={index}
                 className={`flex flex-col md:flex-row ${
                   index % 2 === 1 ? 'md:flex-row-reverse' : ''
-                } items-center gap-10`}
+                } items-center gap-10 bg-gradient-to-br ${project.bgGradient} rounded-xl p-4`}
               >
                 {/* Image */}
-                <div className="w-full md:w-1/2">
+                <div className="w-full md:w-1/2 overflow-hidden rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="rounded-lg shadow-lg w-full object-contain"
+                    className="w-full max-h-[350px] object-contain mx-auto transition-transform duration-300 ease-in-out"
                   />
                 </div>
 
                 {/* Text */}
                 <div className="w-full md:w-1/2">
                   <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
-                  <p className="text-gray-300 leading-relaxed">{project.description}</p>
+                  <p className="text-gray-300 leading-relaxed whitespace-pre-line">{project.description}</p>
                 </div>
               </div>
             ))}
